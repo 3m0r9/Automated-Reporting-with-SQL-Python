@@ -1,7 +1,5 @@
 
-
-```markdown
-# 📊 Automated Reporting with SQL & Python
+📊 Automated Reporting with SQL & Python
 
 This project demonstrates how to automate the process of querying data from a SQL database, generating reports using Python, and exporting the results into structured Excel files. It is particularly useful for business analysts, data engineers, or teams that require daily/weekly automated reports.
 
@@ -96,7 +94,11 @@ Automated-Reporting-with-SQL-Python/
 ## ✍️ Author
 
 * **Imran Abu Libda**
-  AI Engineer | [GitHub](https://github.com/3m0r9)
+
+- **GitHub** - [3m0r9](https://github.com/3m0r9)
+- **LinkedIn** - [Imran Abu Libda](https://www.linkedin.com/in/imran-abu-libda/)
+- **Email** - [imranabulibda@gmail.com](mailto:imranabulibda@gmail.com)
+- **Medium** - [Imran Abu Libda](https://medium.com/@imranabulibda_23845)
 
 ---
 
