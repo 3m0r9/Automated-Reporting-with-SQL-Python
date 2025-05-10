@@ -1,32 +1,111 @@
-# automated_report_python
-An easy way to generate automated report with Python. Create spreadsheet and email them.
-This is a proposal of how you can do the automated report. It will necessary that modified the example acord your need. Everything is described in the article link below.
 
-## Instalation
 
-You will need:
+```markdown
+# 📊 Automated Reporting with SQL & Python
 
-- Python
-- mysql.connector
-    You can install throw pip:
-    pip install mysql.connector
-- xlwt
-    pip install xlwt
+This project demonstrates how to automate the process of querying data from a SQL database, generating reports using Python, and exporting the results into structured Excel files. It is particularly useful for business analysts, data engineers, or teams that require daily/weekly automated reports.
 
-- User and password of your database.  
+---
 
-## How to use
+## 🚀 Features
 
-1. On reporteSemanal.py you need to modify the credential, and the sql query acord what you need to show. Also the list of the destinataries whom you need to send the report.
-2. On Movimiento.py, map the columns of the query to one object, you need to rename according to your query.
-3. On ManejoMail.py, need to change the credential of your SMTP server.
+- ✅ Connects to a SQL Server database using `pyodbc`
+- ✅ Executes parameterized SQL queries
+- ✅ Automates daily or scheduled report generation
+- ✅ Exports results to Excel (.xlsx) with formatted sheets
+- ✅ Handles exceptions and logging for reliability
 
-Finaly configure cron/scheduled tasks to run reporteSemanal.py when you need.
+---
 
-## Article
+## 🛠️ Tech Stack
 
-- Can find a more detailed article about how work on http://www.gsampallo.com/blog/2019/07/05/generar-un-reporte-en-excel-automatico-con-python/
-- How to send emails: http://www.gsampallo.com/blog/2019/07/08/enviar-correos-con-python/
+- **Language**: Python 3.x  
+- **Database**: Microsoft SQL Server  
+- **Libraries Used**:
+  - `pandas`
+  - `pyodbc`
+  - `openpyxl`
+  - `os`, `datetime`, `time`
 
-[![Video](https://img.youtube.com/vi/pY87fRdL6Bc/0.jpg)](https://www.youtube.com/watch?v=pY87fRdL6Bc)
+---
 
+## 📁 Project Structure
+
+```
+
+Automated-Reporting-with-SQL-Python/
+├── sql\_query.sql           # Contains the SQL query for the report
+├── config.py               # Configuration (DB credentials, file paths)
+├── report\_generator.py     # Main script to run the automation
+├── requirements.txt        # Required libraries
+└── README.md               # Project documentation
+
+````
+
+---
+
+## ⚙️ How It Works
+
+1. **Connect to the Database**:  
+   `pyodbc` establishes a secure connection to the SQL Server using credentials in `config.py`.
+
+2. **Run SQL Query**:  
+   The script reads a `.sql` file and executes it dynamically.
+
+3. **Generate Report**:  
+   Results are loaded into a pandas DataFrame and written to Excel using `openpyxl`.
+
+4. **Automation Ready**:  
+   You can schedule this script using Task Scheduler (Windows) or `cron` (Linux/macOS) for regular execution.
+
+---
+
+## 📦 Setup Instructions
+
+1. **Clone the Repo**  
+   ```bash
+   git clone https://github.com/3m0r9/Automated-Reporting-with-SQL-Python.git
+   cd Automated-Reporting-with-SQL-Python
+````
+
+2. **Install Dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Edit `config.py`**
+   Add your database credentials and output directory.
+
+4. **Run the Script**
+
+   ```bash
+   python report_generator.py
+   ```
+
+---
+
+## 📅 Use Case Example
+
+* A retail company wants to send **daily sales summaries** to regional managers.
+* This tool runs at 6:00 AM every day and generates Excel reports from their database.
+* The report is emailed via a separate integration (can be extended).
+
+---
+
+## ✍️ Author
+
+* **Imran Abu Libda**
+  AI Engineer | [GitHub](https://github.com/3m0r9)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Contributions
+
+Pull requests and feedback are welcome. For major changes, please open an issue first to discuss what you would like to change.
