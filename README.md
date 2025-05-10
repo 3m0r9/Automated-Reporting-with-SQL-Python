@@ -64,7 +64,7 @@ Automated-Reporting-with-SQL-Python/
    ```bash
    git clone https://github.com/3m0r9/Automated-Reporting-with-SQL-Python.git
    cd Automated-Reporting-with-SQL-Python
-````
+
 
 2. **Install Dependencies**
 
@@ -81,8 +81,6 @@ Automated-Reporting-with-SQL-Python/
    python report_generator.py
    ```
 
----
-
 ## 📅 Use Case Example
 
 * A retail company wants to send **daily sales summaries** to regional managers.
@@ -91,7 +89,7 @@ Automated-Reporting-with-SQL-Python/
 
 ---
 
-## ✍️ Author
+✍️ Author
 
 * **Imran Abu Libda**
 
@@ -100,7 +98,6 @@ Automated-Reporting-with-SQL-Python/
 - **Email** - [imranabulibda@gmail.com](mailto:imranabulibda@gmail.com)
 - **Medium** - [Imran Abu Libda](https://medium.com/@imranabulibda_23845)
 
----
 
 ## 📄 License
 
